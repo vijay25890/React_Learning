@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  const [currenttab, settab] = useState("abc");
+  const ab = (tab) => {
+    settab(tab);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>jhadsbjdbjdsbdcbjcdbjdcjdcbjdjb</p>
+      <button onClick={() => ab("abc")}>abc</button>
+      <button onClick={() => ab("xyz")}>xyz</button>
+      {currenttab === "abc" ? (
+        <div>
+          <h1>hii</h1>
+          <h1>hii</h1>
+          <h1>hii</h1>
+          <h1>hii</h1>
+        </div>
+      ) : (
+        <div>
+          <h1>byyy</h1>
+          <h1>byyy</h1>
+          <h1>byyy</h1>
+          <h1>byyy</h1>
+        </div>
+      )}
     </div>
   );
 }
