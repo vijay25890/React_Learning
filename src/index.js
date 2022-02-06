@@ -9,10 +9,12 @@ import Props from "./components/Props";
 import GetInputValue from "./components/GetInputValue";
 import Form from "./components/Form";
 import FormValidation from "./components/FormValidation";
+import Rendering from "./components/Rendering";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Rendering />
     <ClickEvent />
     <State />
     <Props name={"vijay"} email={"jhsj"} />
