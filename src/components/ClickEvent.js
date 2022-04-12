@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ClickEvent = () => {
-  const click=()=> {
-    alert("Hii");
-  }
+  const [data, setData] = useState("vijay");
+
+  const clickme = () => {
+    console.log("hiii");
+    setData("ajay");
+  };
   return (
-    <div>
-      <button onClick={()=>click()}>Click Me</button>
-    </div>
+    <>
+      <h5>{data}</h5>
+      <button onClick={clickme}>Click Me</button>
+    </>
   );
 };
 
-export default ClickEvent; 
+export default ClickEvent;

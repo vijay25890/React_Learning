@@ -10,17 +10,27 @@ import GetInputValue from "./components/GetInputValue";
 import Form from "./components/Form";
 import FormValidation from "./components/FormValidation";
 import Rendering from "./components/Rendering";
+import FunctionAsProps from "./components/FunctionAsProps";
+import UseSate from "./components/UseSate";
+
+function click() {
+  alert("hiiii");
+}
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Rendering />
+    {/* <Rendering />
     <ClickEvent />
     <State />
     <Props name={"vijay"} email={"jhsj"} />
     <GetInputValue />
     <Form />
     <FormValidation />
+    <FunctionAsProps data={click} name={"vijay"} />
+    <UseSate /> */}
+    <Form />
+    <Rendering />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const State = () => {
   const [name, setname] = useState("Vijay");
   function change() {
-    setname("Ajay");
+    setname(!"Ajay");
   }
   return (
     <div>

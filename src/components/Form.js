@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
 const Form = () => {
-  const [name, setName] = useState("hii");
+  const [name, setName] = useState("ss");
   const [interrest, setinterrest] = useState("");
   const [tnc, settnc] = useState(false);
   function handleData(e) {
     e.preventDefault();
-    console.log(name);
-  } 
+    console.log(name, tnc, interrest);
+  }
+  function dd(e) {
+    setName(e.target.value);
+  }
   return (
     <div>
       <h1>Hellow</h1>
@@ -16,7 +19,7 @@ const Form = () => {
           type="text"
           value={name}
           placeholder="Enter name "
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => dd(e)}
         />
         <select onChange={(e) => setinterrest(e.target.value)}>
           <option>A</option>
