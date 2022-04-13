@@ -7,11 +7,13 @@ import ClickEvent from "./components/ClickEvent";
 import State from "./components/State";
 import Props from "./components/Props";
 import GetInputValue from "./components/GetInputValue";
+import PassProp from "./components/passProp";
 import Form from "./components/Form";
 import FormValidation from "./components/FormValidation";
 import Rendering from "./components/Rendering";
 import FunctionAsProps from "./components/FunctionAsProps";
 import UseSate from "./components/UseSate";
+import FunProp from "./components/FunProp";
 
 function click() {
   alert("hiiii");
@@ -29,8 +31,10 @@ ReactDOM.render(
     <FormValidation />
     <FunctionAsProps data={click} name={"vijay"} />
     <UseSate /> */}
-    <Form />
+    {/* <Form />
     <Rendering />
+    <PassProp name="vijay" /> */}
+    <FunProp data={click} />
   </React.StrictMode>,
   document.getElementById("root")
 );
