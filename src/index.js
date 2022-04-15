@@ -14,6 +14,9 @@ import Rendering from "./components/Rendering";
 import FunctionAsProps from "./components/FunctionAsProps";
 import UseSate from "./components/UseSate";
 import FunProp from "./components/FunProp";
+import Map from "./components/Map";
+import Nestedmap from "./components/Nestedmap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function click() {
   alert("hiiii");
@@ -32,9 +35,11 @@ ReactDOM.render(
     <FunctionAsProps data={click} name={"vijay"} />
     <UseSate /> */}
     {/* <Form />
-    <Rendering />
-    <PassProp name="vijay" /> */}
+    <Rendering /> */}
+    <PassProp name="vijay" />
     <FunProp data={click} />
+    <Map />
+    <Nestedmap />
   </React.StrictMode>,
   document.getElementById("root")
 );
