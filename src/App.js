@@ -2,6 +2,10 @@ import "./App.css";
 import React, { useState } from "react";
 import ChildToparentData from "./components/childToparentData";
 import { Button } from "react-bootstrap";
+import UseMemo from "./components/useMemo";
+import UseRef from "./components/UseRef";
+import ControlledComp from "./components/ControlledComp";
+import UnControlledComp from "./components/UnControlledComp";
 
 function App() {
   // const [data, setData] = useState(null);
@@ -14,6 +18,7 @@ function App() {
   function add(a) {
     alert(a);
   }
+
   return (
     <div className="App">
       {/* input field */}
@@ -27,6 +32,10 @@ function App() {
       <Button onClick={() => setStatus(!status)}>toggle</Button>
       <h6>data transfering</h6>
       <ChildToparentData data={add} />
+      <UseMemo />
+      <UseRef />
+      <ControlledComp />
+      <UnControlledComp />
     </div>
   );
 }
