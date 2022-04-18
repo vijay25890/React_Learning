@@ -17,6 +17,7 @@ import FunProp from "./components/FunProp";
 import Map from "./components/Map";
 import Nestedmap from "./components/Nestedmap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function click() {
   alert("hiiii");

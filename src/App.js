@@ -10,6 +10,7 @@ import UnControlledComp from "./components/UnControlledComp";
 import Hoc, { Hoc2, HocRed, HOCBlue } from "./components/Hoc";
 import About from "./components/About";
 import Home from "./components/Home";
+import Error from "./components/404Error";
 
 function App() {
   // const [data, setData] = useState(null);
@@ -45,11 +46,15 @@ function App() {
       <HocRed />
       <HOCBlue /> */}
       <BrowserRouter>
-        <Link to="/home">Home Page</Link>
-        <Link to="/about">about Page</Link>
+        <Link to="/">Home Page</Link>
+        <br></br>
+        <Link to="/about">About Page</Link>
+        <br></br>
+        <Link to="/login">Login Page</Link>
         <Routes>
-          <Route path="/home" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/" exact={true} element={<Home />}></Route>
+          <Route path="/about" exact={true} element={<About />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
